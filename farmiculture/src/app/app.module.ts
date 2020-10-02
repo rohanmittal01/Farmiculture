@@ -10,12 +10,22 @@ import {HttpClientModule} from '@angular/common/http';
 import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
 import { AboutComponent } from './about/about.component';
+import { NavbarComponent } from './navbar/navbar.component';
+import { LandAnalysisComponent } from './land-analysis/land-analysis.component';
+import { ProductCardComponent } from './product-card/product-card.component';
+import { ProductDetailsComponent } from './product-details/product-details.component';
+import { ProductsComponent } from './products/products.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
-    AboutComponent
+    AboutComponent,
+    NavbarComponent,
+    LandAnalysisComponent,
+    ProductCardComponent,
+    ProductDetailsComponent,
+    ProductsComponent
   ],
   imports: [
     BrowserModule,
@@ -27,7 +37,9 @@ import { AboutComponent } from './about/about.component';
     HttpClientModule,
     RouterModule.forRoot([
       {path: '', component: HomeComponent},
-      {path: 'about', component: AboutComponent}
+      {path: 'about', component: AboutComponent},
+      {path: 'analysis', component: LandAnalysisComponent},
+      {path: 'products/:id', component: ProductDetailsComponent},
     ])
   ],
   providers: [],

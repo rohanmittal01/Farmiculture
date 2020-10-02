@@ -1,0 +1,61 @@
+<!-- <div class="bg-image"></div> -->
+  <div class="row" style="margin: 10px">
+    <div
+      class="col-md-2"
+      style="
+        min-height: 90vh;
+        font-size: 20px;
+        background-color: rgba(102, 175, 83, 0.6);
+      "
+    >
+    <div class="position-fixed">
+      <br />
+      <br />
+      <p style="text-align: center; font-size: 40px;"><b>PROFILE</b></p>
+ 
+      <p style="font-size: 25px;"><b>Name: Ramesh</b></p>
+      <p style="font-size: 25px;"><b>Location: Chennai</b></p>
+      <p style="font-size: 25px;"><b>Last checked on: <br>Oct 2, 2020</b></p>
+    </div>
+   
+    </div>
+    <div class="col-md-10">
+        <h1 class="mt-4" style="text-align: center;">SENSORS</h1>
+        <div class="row" style="padding: 100px;">
+            <div class="col">
+                <div class="card">
+                  <h3>HUMIDITY</h3>
+                  <h1>80</h1>
+                </div>
+              </div>
+            
+              <div class="col">
+                <div class="card">
+                  <h3>Moisture</h3>
+                  <h1>96</h1>
+
+                </div>
+              </div>
+              
+              <div class="col">
+                <div class="card">
+                  <h3>Temperature</h3>
+                  <h1>35&#176; C</h1>
+                </div>
+              </div>
+              
+              <div class="col">
+                <div class="card">
+                  <h3>pH</h3>
+                  <h1>7.4</h1>
+                </div>
+              </div>
+        </div>
+        <br>
+        <button *ngIf="showSuggestCropsButton" class="btn btn-warning" style="margin-top:-100px;width: 20%; margin-left: 40%; margin-right: 40%;" (click)="suggestCrops()">Suggest Crops</button>
+        <div *ngIf="loading" style="text-align: center;">Loading ...</div>
+        <div style="margin-top: -100px" *ngIf="showCrops">
+          <app-products></app-products>
+        </div>
+    </div>
+  </div>
