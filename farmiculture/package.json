@@ -23,6 +23,7 @@
     "@angular/router": "^9.1.12",
     "@auth0/angular-jwt": "^5.0.1",
     "@ng-bootstrap/ng-bootstrap": "^7.0.0",
+    "alertifyjs": "^1.13.1",
     "angularfire2": "^5.4.2",
     "bootstrap": "^4.5.2",
     "firebase": "^7.22.0",
