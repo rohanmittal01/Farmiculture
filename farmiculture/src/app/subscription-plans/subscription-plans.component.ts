@@ -15,6 +15,6 @@ export class SubscriptionPlansComponent implements OnInit {
 
   pay(price){
     console.log('payment/' + price);
-    this.router.navigate(['payment' + price]);
+    this.router.navigate(['payment/' + price]);
   }
 }

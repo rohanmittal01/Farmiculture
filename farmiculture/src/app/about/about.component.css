@@ -4,12 +4,23 @@
   }
 
 footer {
-    background-color : #333333;
+    background-color : rgb(39,39,39);
     color : blanchedalmond;
     padding-top : 2rem;
     padding-bottom : 2rem;
+}
+a{
+    color: blanchedalmond
 }
 
 [class*="col-"] {
     padding: 1rem;
 }
+
+.vertical { 
+    border-left: 2px solid gray; 
+    height: 35px; 
+    position:absolute; 
+    margin-top:-20px;
+    margin-left:-3px
+} 
