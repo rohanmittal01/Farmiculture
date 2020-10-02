@@ -1,0 +1,32 @@
+<!-- <app-banner></app-banner> -->
+<!-- <div class="row" style="margin:10px">
+    <div class="row" >
+      <ng-container *ngFor="let product of filteredProducts; let i = index">
+        <div class="col-lg-2 col-md-4 col-sm-6">
+          <app-farmer-card [product]="product"></app-farmer-card>
+        </div>
+
+      </ng-container>
+    </div>
+  </div> -->
+  
+
+
+
+
+<div class="row container" style="margin: 20px;">
+    <div class="col-lg-3 col-md-4 col-sm-6"></div>
+    <div class="col-lg-9 col-md-8 col-sm-6">
+      <!-- <div class="row"> -->
+        <div class="row">
+          <ng-container *ngFor="let product of filteredProducts; let i = index">
+            <div class="col-lg-3 col-md-6 col-sm-12">
+              <app-farmer-card [product]="product"></app-farmer-card>
+            </div>
+            <!-- <div *ngIf="(i + 1) % 3 === 0" class="w-100"></div> -->
+          </ng-container>
+        </div>
+      </div>
+    <!-- </div> -->
+  </div>
+  

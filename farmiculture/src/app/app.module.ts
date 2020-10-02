@@ -22,6 +22,8 @@ import { environment } from 'src/environments/environment';
 import { SubscriptionPlansComponent } from './subscription-plans/subscription-plans.component';
 import { PaymentGatewayComponent } from './payment-gateway/payment-gateway.component';
 import { MyPlansComponent } from './my-plans/my-plans.component';
+import { HireAFarmerComponent } from './hire-a-farmer/hire-a-farmer.component';
+import { FarmerCardComponent } from './hire-a-farmer/farmer-card/farmer-card.component';
 
 @NgModule({
   declarations: [
@@ -36,7 +38,9 @@ import { MyPlansComponent } from './my-plans/my-plans.component';
     ProductDescriptionComponent,
     SubscriptionPlansComponent,
     PaymentGatewayComponent,
-    MyPlansComponent
+    MyPlansComponent,
+    HireAFarmerComponent,
+    FarmerCardComponent
   ],
   imports: [
     BrowserModule,
@@ -55,6 +59,7 @@ import { MyPlansComponent } from './my-plans/my-plans.component';
       {path: 'products/:id', component: ProductDetailsComponent},
       {path: 'product/:id', component: ProductDescriptionComponent},
       {path: 'plans', component: SubscriptionPlansComponent},
+      {path: 'hireafarmer', component: HireAFarmerComponent},
       {path: 'payment/:id', component: PaymentGatewayComponent},
       {path: 'my/plans', component: MyPlansComponent}
     ])
