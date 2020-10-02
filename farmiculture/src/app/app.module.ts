@@ -19,6 +19,7 @@ import { ProductDescriptionComponent } from './product-description/product-descr
 import { AngularFireModule } from 'angularfire2';
 import { AngularFireDatabaseModule } from 'angularfire2/database';
 import { environment } from 'src/environments/environment';
+import { SubscriptionPlansComponent } from './subscription-plans/subscription-plans.component';
 
 @NgModule({
   declarations: [
@@ -30,7 +31,8 @@ import { environment } from 'src/environments/environment';
     ProductCardComponent,
     ProductDetailsComponent,
     ProductsComponent,
-    ProductDescriptionComponent
+    ProductDescriptionComponent,
+    SubscriptionPlansComponent
   ],
   imports: [
     BrowserModule,
@@ -48,6 +50,7 @@ import { environment } from 'src/environments/environment';
       {path: 'analysis', component: LandAnalysisComponent},
       {path: 'products/:id', component: ProductDetailsComponent},
       {path: 'product/:id', component: ProductDescriptionComponent},
+      {path: 'plans', component: SubscriptionPlansComponent}
     ])
   ],
   providers: [],

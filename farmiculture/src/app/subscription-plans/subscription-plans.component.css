@@ -1,0 +1,15 @@
+.card {
+  background-color: rgb(39, 39, 39);
+  color: white;
+  padding: 20px;
+  border: 1px solid white;
+  border-radius: 10px;
+  position: relative;
+}
+
+.bestSeller {
+  position: absolute;
+  width: 40px;
+  right: 30px;
+  top: -20px;
+}
