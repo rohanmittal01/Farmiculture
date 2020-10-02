@@ -15,6 +15,10 @@ import { LandAnalysisComponent } from './land-analysis/land-analysis.component';
 import { ProductCardComponent } from './product-card/product-card.component';
 import { ProductDetailsComponent } from './product-details/product-details.component';
 import { ProductsComponent } from './products/products.component';
+import { ProductDescriptionComponent } from './product-description/product-description.component';
+import { AngularFireModule } from 'angularfire2';
+import { AngularFireDatabaseModule } from 'angularfire2/database';
+import { environment } from 'src/environments/environment';
 
 @NgModule({
   declarations: [
@@ -25,7 +29,8 @@ import { ProductsComponent } from './products/products.component';
     LandAnalysisComponent,
     ProductCardComponent,
     ProductDetailsComponent,
-    ProductsComponent
+    ProductsComponent,
+    ProductDescriptionComponent
   ],
   imports: [
     BrowserModule,
@@ -35,11 +40,14 @@ import { ProductsComponent } from './products/products.component';
     BrowserAnimationsModule,
     NoopAnimationsModule,
     HttpClientModule,
+    AngularFireModule.initializeApp(environment.firebase),
+    AngularFireDatabaseModule,
     RouterModule.forRoot([
       {path: '', component: HomeComponent},
       {path: 'about', component: AboutComponent},
       {path: 'analysis', component: LandAnalysisComponent},
       {path: 'products/:id', component: ProductDetailsComponent},
+      {path: 'product/:id', component: ProductDescriptionComponent},
     ])
   ],
   providers: [],

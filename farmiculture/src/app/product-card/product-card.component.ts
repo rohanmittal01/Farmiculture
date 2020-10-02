@@ -32,7 +32,7 @@ export class ProductCardComponent implements OnInit {
   
   details(){
     console.log('detials');
-    window.open('products/'+this.product._id, '_blank');
+    window.open('product/'+this.product._id, '_blank');
   }
 
 }

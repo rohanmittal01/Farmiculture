@@ -1,0 +1,65 @@
+<div class="mt-2" style="text-align: center;">
+    <h1>{{product.Common_Name}}'s Details</h1>
+    <div>
+        <img
+        [(src)]="product.imageUrl"
+        style="border: 5px solid rgb(39,39,39); height: 300px; width: auto; border-radius: 30px;"
+      />
+    </div>
+    <div class="row mt-2">
+        <div class="col-3 box" style="padding: 10px;">
+            <h4>Latin Name</h4>
+            <h2>{{product.Latin_Name}}</h2>
+        </div>
+        <div class="col-3 box" style="padding: 10px;">
+            <h4>Common Name</h4>
+            <h2>{{product.Common_Name}}</h2>
+        </div>
+        <div class="col-3 box" style="padding: 10px;">
+            <h4>Family Name</h4>
+            <h2>{{product.Family_Name}}</h2>
+        </div>
+        <div class="col-3 box" style="padding: 10px;">
+            <h4>Plant Type</h4>
+            <h2>{{product.Plant_Type}}</h2>
+        </div>
+        <br>
+        <div class="col-3 box" style="padding: 10px;">
+            <h4>Bloom Time</h4>
+            <h2>{{product.Bloom_Time}}</h2>
+        </div>
+        <div class="col-3 box" style="padding: 10px;">
+            <h4>Flower Color</h4>
+            <h2>{{product.Flower_Color}}</h2>
+        </div>
+        <div class="col-3 box" style="padding: 10px;">
+            <h4>Size at Maturity</h4>
+            <h2>{{product.Size_at_Maturity}}</h2>
+        </div>
+        <div class="col-3 box" style="padding: 10px;">
+            <h4>Suitable Site Conditions</h4>
+            <h2>{{product.Suitable_Site_Conditions}}</h2>
+        </div>
+        <div class="col-3 box" style="padding: 10px;">
+            <h4>Soil Type</h4>
+            <h2>{{product.Soil_Type}}</h2>
+        </div>
+        <div class="col-3 box" style="padding: 10px;">
+            <h4>Water Needs</h4>
+            <h2>{{product.Water_Needs}}</h2>
+        </div>
+        <div class="col-3 box" style="padding: 10px;">
+            <h4>Appropriate Location</h4>
+            <h2>{{product.Appropriate_Location}}</h2>
+        </div>
+        <div class="col-3 box" style="padding: 10px;">
+            <h4>Market Price</h4>
+            <h2>{{product.price}}</h2>
+        </div>
+    </div>
+    
+    <div class="box" style="text-align: center; padding: 10px">
+        <h4>Additional Information</h4>
+        <h2>{{product.Additional_Characteristices_Notes}}</h2>
+    </div>
+</div>
