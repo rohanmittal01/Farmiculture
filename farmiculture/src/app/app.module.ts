@@ -21,6 +21,7 @@ import { AngularFireDatabaseModule } from 'angularfire2/database';
 import { environment } from 'src/environments/environment';
 import { SubscriptionPlansComponent } from './subscription-plans/subscription-plans.component';
 import { PaymentGatewayComponent } from './payment-gateway/payment-gateway.component';
+import { MyPlansComponent } from './my-plans/my-plans.component';
 
 @NgModule({
   declarations: [
@@ -34,7 +35,8 @@ import { PaymentGatewayComponent } from './payment-gateway/payment-gateway.compo
     ProductsComponent,
     ProductDescriptionComponent,
     SubscriptionPlansComponent,
-    PaymentGatewayComponent
+    PaymentGatewayComponent,
+    MyPlansComponent
   ],
   imports: [
     BrowserModule,
@@ -53,7 +55,8 @@ import { PaymentGatewayComponent } from './payment-gateway/payment-gateway.compo
       {path: 'products/:id', component: ProductDetailsComponent},
       {path: 'product/:id', component: ProductDescriptionComponent},
       {path: 'plans', component: SubscriptionPlansComponent},
-      {path: 'payment/:id', component: PaymentGatewayComponent}
+      {path: 'payment/:id', component: PaymentGatewayComponent},
+      {path: 'my/plans', component: MyPlansComponent}
     ])
   ],
   providers: [],

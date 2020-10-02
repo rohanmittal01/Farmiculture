@@ -21,8 +21,20 @@
               <img src="../../assets/icons/Hire farmer_jpeg-01-01.jpg" style="height: 40px;">
             </a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link btn-danger" routerLink="/login">Logout</a>
+          <li>
+            <a class="nav-link mr-2" routerLink="/plans">
+              <img src="../../assets/icons/Our plans_jpeg-01.jpg" style="height: 40px;">
+            </a>
+          </li>
+          <li ngbDropdown class="nav-item dropdown">
+            <a ngbDropdownToggle class="nav-link dropdown-toggle" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Welcome Ramesh
+            </a>
+            <div ngbDropdownMenu class="dropdown-menu mr-auto" aria-labelledby="dropdown01" style="background-color: white;">
+              <a class="dropdown-item" routerLink="/my/orders"><i class="fa fas fa-shopping-bag"></i>  My Plans</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" style="color:brown" (click)="logout()"> Log Out</a>
+            </div>
           </li>
       </ul>
     </div>

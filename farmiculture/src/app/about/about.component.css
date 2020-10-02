@@ -1,0 +1,15 @@
+.imagewrap {
+    display: inline-block;
+    position: relative;
+  }
+
+footer {
+    background-color : #333333;
+    color : blanchedalmond;
+    padding-top : 2rem;
+    padding-bottom : 2rem;
+}
+
+[class*="col-"] {
+    padding: 1rem;
+}
