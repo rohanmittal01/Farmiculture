@@ -30,3 +30,5 @@ Now, the project must begin building and shall take some time.
 1. Change directory to Plant-recommendation-system folder
 2. In Terminal, run the command 'npm install'
 3. In Terminal, execute 'npm run dev'
+
+# For Screenshots and more details, Please refer 'Farmiculture Document.pdf'
