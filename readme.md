@@ -5,3 +5,5 @@ Team 2 -
 - Madhur Padavala
 - Nithesh C
 -  P Mihir Achyuta
+
+![](readme images/logo.png)
