@@ -13,9 +13,13 @@
 
 
 
-
-<div class="row container" style="margin: 20px;">
-    <div class="col-lg-3 col-md-4 col-sm-6"></div>
+<div class="container">
+  <h1 class="mt-4" style="text-align: center;">Hire A Farmer</h1>
+  <hr>
+<div class="row" style="margin: 20px;">
+    <div class="col-lg-3 col-md-4 col-sm-6">
+      <app-farmer-filter [avialability]="availability"></app-farmer-filter>
+    </div>
     <div class="col-lg-9 col-md-8 col-sm-6">
       <!-- <div class="row"> -->
         <div class="row">
@@ -29,4 +33,4 @@
       </div>
     <!-- </div> -->
   </div>
-  
+</div>

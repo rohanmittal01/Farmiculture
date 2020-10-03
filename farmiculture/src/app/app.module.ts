@@ -24,6 +24,8 @@ import { PaymentGatewayComponent } from './payment-gateway/payment-gateway.compo
 import { MyPlansComponent } from './my-plans/my-plans.component';
 import { HireAFarmerComponent } from './hire-a-farmer/hire-a-farmer.component';
 import { FarmerCardComponent } from './hire-a-farmer/farmer-card/farmer-card.component';
+import { FarmerFilterComponent } from './hire-a-farmer/farmer-filter/farmer-filter.component';
+import { FarmerDetailsComponent } from './hire-a-farmer/farmer-details/farmer-details.component';
 
 @NgModule({
   declarations: [
@@ -40,7 +42,9 @@ import { FarmerCardComponent } from './hire-a-farmer/farmer-card/farmer-card.com
     PaymentGatewayComponent,
     MyPlansComponent,
     HireAFarmerComponent,
-    FarmerCardComponent
+    FarmerCardComponent,
+    FarmerFilterComponent,
+    FarmerDetailsComponent
   ],
   imports: [
     BrowserModule,

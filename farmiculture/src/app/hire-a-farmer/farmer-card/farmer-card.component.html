@@ -2,11 +2,11 @@
     <img class="card-img-top" [src]="product.imageUrl" *ngIf="product.imageUrl" alt="{{product.name}}" />
     <div class="card-body">
       <h6 class="card-title" style="text-align: center;"><b>{{ product.name }}</b></h6>
-      <p class="card-text"><b>Gender:</b> {{ product.gender}}</p>
-      <p class="card-text"><b>Age:</b> {{ product.age}} years</p>
-      <p class="card-text"><b>Price:</b> {{ product.price | currency: "INR" }}</p>
+      <span class="card-text"><b>Gender:</b> {{ product.gender}}</span><br>
+      <span class="card-text"><b>Age:</b> {{ product.age}} years</span><br>
+      <span class="card-text"><b>Price:</b> {{ product.price | currency: "INR" }}</span>
       <div>
-        <button class="btn btn-warning w-100" (click)="details()">
+        <button class="btn btn-warning w-100 mt-2" (click)="details()">
           <b>Get Info <img src="https://cdn4.iconfinder.com/data/icons/linecon/512/info-256.png" style="height:20px;width: 20px;"></b>
         </button>
       </div>
