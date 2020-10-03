@@ -8,6 +8,7 @@ Team 2 -
 
 <p align="center">
   <img max-width="100" height="100" src="https://github.com/rohanmittal01/Farmiculture/blob/master/readme_images/logo.png?raw=true">
+  <h3>Sense your land, and grow beyond</h3>
 </p>
 
 # Components of Project
