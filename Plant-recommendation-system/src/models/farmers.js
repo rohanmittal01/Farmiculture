@@ -54,6 +54,11 @@ const Farmers = mongoose.model("Farmers", {
       trim: true,
     },
   },
+  expertise: {
+      type: String,
+      required: true,
+      trim: true,
+  },
   price: {
     type: Number,
     required: true,
