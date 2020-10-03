@@ -64,6 +64,7 @@ import { FarmerDetailsComponent } from './hire-a-farmer/farmer-details/farmer-de
       {path: 'product/:id', component: ProductDescriptionComponent},
       {path: 'plans', component: SubscriptionPlansComponent},
       {path: 'hireafarmer', component: HireAFarmerComponent},
+      {path: 'farmer/:id', component: FarmerDetailsComponent},
       {path: 'payment/:id', component: PaymentGatewayComponent},
       {path: 'my/plans', component: MyPlansComponent}
     ])

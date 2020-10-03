@@ -1,1 +1,120 @@
-<p>farmer-details works!</p>
+
+<div class="container" style="background: rgba(0, 0, 0, 0.6); padding:10px; color: white; border-radius: 10px;">
+    <h1 style="text-align: center;">{{product.name}}'s Details</h1>
+    <div class="row">
+      <div class="col-sm-5">
+        <div>
+          <img class="w-100"
+            [(src)]="product.imageUrl"
+            style="border: 5px solid white"
+          />
+        </div>
+      </div>
+      <div class="col-sm-7">
+        <div class="input-group mt-2">
+          <div class="input-group-prepend">
+            <span class="input-group-text" style="background-color: rgb(102,175,83);"
+              >Name</span
+            >
+          </div>
+          <input
+            type="text"
+            style="background-color: white;"
+            class="form-control"
+            [(value)]="product.name"
+            disabled
+          />
+        </div>
+        <div class="input-group mt-2">
+          <div class="input-group-prepend">
+            <span class="input-group-text" style="background-color: rgb(102,175,83);"
+              >Gender</span
+            >
+          </div>
+          <input
+            type="text"
+            style="background-color: white;"
+            class="form-control"
+            [(value)]="product.gender"
+            disabled
+          />
+        </div>
+        <div class="input-group mt-2">
+            <div class="input-group-prepend">
+              <span class="input-group-text" style="background-color:rgb(102,175,83);"
+                >Age</span
+              >
+            </div>
+            <input
+              type="text"
+              style="background-color: white;"
+              class="form-control"
+              [(value)]="product.age"
+              disabled
+            />
+          </div>
+          <div class="input-group mt-2">
+            <div class="input-group-prepend">
+              <span class="input-group-text" style="background-color: rgb(102,175,83);"
+                >Experience (in years)</span
+              >
+            </div>
+            <input
+              type="text"
+              style="background-color: white;"
+              class="form-control"
+              [(value)]="product.experience"
+              disabled
+            />
+          </div>
+          <div class="input-group mt-2">
+            <div class="input-group-prepend">
+              <span class="input-group-text" style="background-color:rgb(102,175,83);"
+                >Expertise</span
+              >
+            </div>
+            <input
+              type="text"
+              style="background-color: white;"
+              class="form-control"
+              [(value)]="product.expertise"
+              disabled
+            />
+          </div>
+          <div class="input-group mt-2">
+            <div class="input-group-prepend">
+              <span class="input-group-text" style="background-color: rgb(102,175,83);"
+                >Located in (city)</span
+              >
+            </div>
+            <input
+              type="text"
+              style="background-color: white;"
+              class="form-control"
+              [(value)]="product.address.city"
+              disabled
+            />
+          </div>
+          <div class="input-group mt-2">
+            <div class="input-group-prepend">
+              <span class="input-group-text" style="background-color: rgb(102,175,83);"
+                >Located in (State)</span
+              >
+            </div>
+            <input
+              type="text"
+              style="background-color: white;"
+              class="form-control"
+              [(value)]="product.address.state"
+              disabled
+            />
+          </div>
+          <br>
+          <div>
+              <h4>Demanding Amount: {{product.price | currency:"INR"}} per Month</h4>
+          </div>
+          <button class="btn btn-warning w-100">Enquire</button>
+          <button class="btn btn-success w-100" (click)="pay(product.price)">Hire Now</button>
+      </div>
+    </div>
+</div>

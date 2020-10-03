@@ -30,7 +30,7 @@ ngOnInit(): void {}
 
 details(){
   console.log('detials');
-  window.open('product/'+this.product._id, '_blank');
+  window.open('farmer/'+this.product._id, '_blank');
 }
 
 
