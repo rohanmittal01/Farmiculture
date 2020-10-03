@@ -7,5 +7,5 @@ Team 2 -
 -  P Mihir Achyuta
 
 <p align="center">
-  <img max-width="460" height="300" src="https://github.com/rohanmittal01/Farmiculture/blob/master/readme_images/logo.png?raw=true">
+  <img max-width="100" height="100" src="https://github.com/rohanmittal01/Farmiculture/blob/master/readme_images/logo.png?raw=true">
 </p>
