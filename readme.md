@@ -6,4 +6,4 @@ Team 2 -
 - Nithesh C
 -  P Mihir Achyuta
 
-![](readme images/logo.png)
+![](https://github.com/rohanmittal01/Farmiculture/blob/master/readme_images/logo.png?raw=true)
